@@ -5,7 +5,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import MessageIcon from "@mui/icons-material/MessageOutlined";
 import ShareIcon from "@mui/icons-material/ShareOutlined";
 
-function Videosidebar({ likes, shares, messages }) {
+function VideoSidebar({ likes, shares, messages }) {
   const [liked, setLiked] = useState(false);
   return (
     <div className="videoSidebar">
@@ -33,4 +33,4 @@ function Videosidebar({ likes, shares, messages }) {
   );
 }
 
-export default Videosidebar;
+export default VideoSidebar;

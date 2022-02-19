@@ -13,6 +13,7 @@ function Video({ url, channel, description, song, likes, messages, shares }) {
       setPlay(false);
     } else {
       videoRef.current.play();
+      setPlay(true);
     }
   };
   return (
@@ -24,7 +25,7 @@ function Video({ url, channel, description, song, likes, messages, shares }) {
         src={url}
       ></video>
       <VideoFooter channel={channel} description={description} song={song} />
-      <VideoSidebar likes={likes} messages={messages} shares={shares} />
+      <VideoSidebar likes={likes} shares={shares} messages={messages} />
     </div>
   );
 }
